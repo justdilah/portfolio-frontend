@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6e8d719a.css",
+    "main.js": "/static/js/main.7135463a.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/Nur Dilah 1.gif": "/static/media/Nur Dilah 1.6a38e9b3748e95f44f91.gif",
+    "static/media/Rectangle 3.png": "/static/media/Rectangle 3.ba09b8d3acca6729bb67.png",
+    "static/media/project_rect.png": "/static/media/project_rect.6b8bc14e5e2a04c97d20.png",
+    "static/media/Skills_Rectangle.png": "/static/media/Skills_Rectangle.fd8042b502322767953d.png",
+    "static/media/Rectangle 5.png": "/static/media/Rectangle 5.e279245badf91fc9612b.png",
+    "static/media/passport_dilah.png": "/static/media/passport_dilah.c720eb3ad5b11d0f271c.png",
+    "index.html": "/index.html",
+    "main.6e8d719a.css.map": "/static/css/main.6e8d719a.css.map",
+    "main.7135463a.js.map": "/static/js/main.7135463a.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e8d719a.css",
+    "static/js/main.7135463a.js"
+  ]
+}
