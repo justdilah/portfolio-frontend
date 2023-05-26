@@ -1,0 +1,304 @@
+@media (max-width: 570px) {
+    /*NAVBAR*/
+    .navbar-base {
+        margin-top:30px;
+    }
+
+    .container-navbar {
+        padding-top: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position:relative;
+        width:100%;
+    }
+
+    .portfolio {
+        margin-bottom:40px;
+        text-align: center;
+    }
+    .portfolio svg {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40%;
+    }
+
+    .portfolio svg path {
+        fill: transparent;
+        stroke-width: 1px;
+        stroke: black;
+        stroke-dasharray: 1210.709716796875;
+        stroke-dashoffset: -1210.709716796875;
+
+    }
+
+    .portfolio .active svg path{
+        stroke-dashoffset: 0;
+    }
+
+    .active svg path{
+        stroke-dashoffset: 0;
+    }
+
+    .portfolio:hover svg path {
+        stroke-dashoffset: 0;
+        transition: stroke-dashoffset 0.5s cubic-bezier(0.29, 0.68, 0.74, 1.02);
+    }
+
+    .nav-link-item {
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Arial;
+        text-decoration: none;
+        color: black;
+    }
+
+    .navbar-main {
+        display: flex;
+        flex-wrap:wrap;
+        color:black;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    .navbar-main a {
+        position: relative;
+        padding: 10px;
+    }
+
+    .navbar-main svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 120%;
+        height: 120%;
+    }
+
+    .navbar-main a svg path {
+        fill: transparent;
+        stroke-width: 1px;
+        stroke: black;
+        stroke-dasharray: 1210.709716796875;
+        stroke-dashoffset: -1210.709716796875;
+
+    }
+
+    .navbar-main .active svg path{
+        stroke-dashoffset: 0;
+    }
+
+    .navbar-main a:hover svg path {
+        stroke-dashoffset: 0;
+        transition: stroke-dashoffset 0.5s cubic-bezier(0.29, 0.68, 0.74, 1.02);
+    }
+
+    .intro-rect {
+        width:600px;
+        transform: rotate(90deg);
+    }
+
+    .intro-block {
+        position: relative;
+        width: max-content;
+        margin-top:150px;
+        margin-bottom:130px;
+    }
+
+    .Body-Class {
+        height:max-content;
+        min-height: 1200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .crop {
+        width: 220px;
+        height: 180px;
+        overflow: hidden;
+    }
+    .passport_photo {
+        width:400px;
+        margin: -65px 0 0 -50px;
+    }
+    .gif {
+        width: 210px;
+        height: 210px;
+        margin: -20px 0 0 -5px;
+    }
+    .intro {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        color:black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .intro_rect {
+        margin-top: 160px;
+        margin-bottom: 100px;
+        width:800px;
+        transform: rotate(90deg);
+    }
+    .buttons_div{
+        display: flex;
+    }
+
+    .inner_div {
+        color: black;
+        text-align: left;
+        width:35%;
+        margin-top: 10px;
+    }
+
+    .inner_div p {
+        width:80%;
+    }
+
+    .div-rect {
+        height:400px;
+        transform: rotate(90deg);
+    }
+
+    .skills-rect {
+        width:500px;
+    }
+
+    .skills-div p {
+        font-size: 14px;
+    }
+
+    .all-project-div a {
+        color:black;
+    }
+
+    .project-inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width:60%;
+        transform: translate(-50%, -50%);
+        flex-wrap: wrap;
+        padding:30px;
+
+    }
+    .inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width:35%;
+        transform: translate(-50%, -50%);
+        flex-wrap: wrap;
+        padding:30px;
+    }
+
+    .project-inner p{
+        font-size: 14px;
+    }
+
+    .project-img {
+        margin-bottom:40px;
+    }
+
+    .intro_inner {
+        color: black;
+        text-align: center;
+        width:40%;
+    }
+
+    .intro_inner h2 {
+        font-size: 18px;
+    }
+
+    .intro_inner p {
+        font-size: 12px;
+    }
+
+    .contact {
+        height: 20px;
+        width: max-content;
+        margin: 30px;
+    }
+
+    .contact-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .tags-div {
+        display:flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .optionbar-base {
+        text-align: center;
+        margin-left:50px;
+        padding-top: 30px;
+    }
+
+    .optionbar-item {
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Arial;
+        text-decoration: none;
+        color: black;
+        margin-right: 20px;
+    }
+
+    .optionbar-main {
+        display: flex;
+        color:black;
+        list-style-type: none;
+    }
+
+    .optionbar-main button:hover{
+        color:black;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding:5px 7px 5px 7px;
+    }
+
+    .optionbar-item-active {
+        color:black;
+        border: 1px solid black;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Arial;
+        text-decoration: none;
+        color: black;
+        margin-right: 20px;
+        border-radius: 20px;
+        padding:5px 7px 5px 7px;
+    }
+
+    .option-div {
+        color:black;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding:3px 7px 3px 7px;
+        width: max-content;
+        margin-right:10px;
+    }
+
+    .competitions {
+        display: flex;
+        /*flex-direction: column;*/
+        align-items: center;
+        justify-content: center;
+        /*font-size: calc(10px + 2vmin);*/
+        /*color: white;*/
+        flex-wrap: wrap;
+    }
+
+}

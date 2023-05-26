@@ -1,0 +1,298 @@
+/*IN GENERAL*/
+.App {
+  text-align: center;
+  background-color: #FAFAFC;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+footer {
+  text-align: right;
+  margin-top:20px;
+  margin-right: 20px;
+  font-size: 32px;
+}
+
+p {
+  font-family: Arial;
+}
+
+span {
+  color: #527188;
+}
+button {
+  background-color: transparent;
+  border:none;
+}
+
+.portfolio {
+  color: #527087;
+  font-weight: bold;
+  font-family: Arial;
+  text-decoration: none;
+}
+
+.nav-link-item {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-main {
+  color:black;
+  list-style-type: none;
+}
+
+.navbar-main a {
+  position: relative;
+  padding: 10px;
+}
+
+.navbar-main svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  /*z-index: -1;*/
+}
+
+.navbar-main a svg path {
+  fill: transparent;
+  stroke-width: 1px;
+  stroke: black;
+  stroke-dasharray: 1210.709716796875;
+  stroke-dashoffset: -1210.709716796875;
+
+}
+
+.navbar-main .active svg path{
+  stroke-dashoffset: 0;
+}
+
+.navbar-main a:hover svg path {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 0.5s cubic-bezier(0.29, 0.68, 0.74, 1.02);
+}
+
+.Body-Class {
+  background-color: #FAFAFC;
+}
+
+.skills-div {
+  position: relative;
+  width: max-content;
+}
+
+.skills-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.option-div {
+  color:black;
+  border: 1px solid black;
+  width: max-content;
+}
+
+.tags-div {
+  display:flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.project-div {
+  position: relative;
+  width: max-content;
+  text-align: left
+}
+
+.experience-div {
+  border: 1px solid black;
+}
+
+.experience-inner {
+  flex-wrap: wrap;
+}
+
+.all-project-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+.all-project-div a {
+  color:black;
+}
+
+.project-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width:60%;
+  transform: translate(-50%, -50%);
+  flex-wrap: wrap;
+  padding:10px;
+
+}
+
+.project-img {
+  width: 280px;
+  height: auto;
+}
+
+.gif {
+  width: 500px;
+  height: 500px;
+  margin: -60px 0 0 -70px;
+}
+.intro {
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  display: flex;
+  color:black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.buttons_div{
+  display: flex;
+}
+
+.inner_div {
+  color: black;
+  text-align: left;
+  width:60%;
+  /*margin-left: 60px;*/
+}
+
+.intro_inner {
+  color: black;
+  text-align: left;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.optionbar-base {
+  text-align: center;
+  margin-left:50px;
+  padding-top: 30px;
+}
+
+.optionbar-item {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial;
+  text-decoration: none;
+  color: black;
+}
+
+.optionbar-main {
+  display: flex;
+  color:black;
+  list-style-type: none;
+}
+
+.optionbar-main button:hover{
+  color:black;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding:5px 7px 5px 7px;
+}
+
+.optionbar-item-active {
+  color:black;
+  border: 1px solid black;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial;
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+  border-radius: 20px;
+  padding:5px 7px 5px 7px;
+}
+
+.competition-heading {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.competition-heading span {
+  color: black;
+  border: 1px solid black;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial;
+  text-decoration: none;
+  border-radius: 20px;
+  padding:5px 7px 5px 7px;
+}
+
+.company {
+  color: #527087;
+  border: 1px solid #527087;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial;
+  width: max-content;
+  text-decoration: none;
+  border-radius: 20px;
+  padding:5px 7px 5px 7px;
+}
+
+.positions {
+  color: black;
+  border: 1px solid black;
+  font-size: 16px;
+  font-family: Arial;
+  width: max-content;
+  text-decoration: none;
+  border-radius: 20px;
+  padding:5px 7px 5px 7px;
+}
+
+.viewmore {
+  border: 2px solid black;
+  margin-top:15px;
+  margin-right:10px;
+  width:max-content;
+  font-size: 14px;
+  padding: 5px 20px 5px 20px;
+  height:auto;
+  background-color: #527087;
+  color:white;
+  font-weight:bold;
+  font-family: Arial;
+  border-radius: 20px;
+}
+
+.none {
+  display:none;
+}
+
+.crop-project{
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/*make sure that the text wraps when line breaks are in the content, and pre-line specifically collapses multiple whitespaces into one.*/
+.css-fix {
+  white-space: pre-wrap;
+}
