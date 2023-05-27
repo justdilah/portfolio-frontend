@@ -2,6 +2,7 @@ import Option from "./Option";
 import React from "react";
 import rect from "../assets/Rectangle 5.png";
 import {InfinitySpin} from "react-loader-spinner";
+import {baseURL} from "../services/Constants";
 
 
 function Competition_Rectangles(){
@@ -12,7 +13,7 @@ function Competition_Rectangles(){
 
     // React will not wait till the data has been loaded
     React.useEffect(() => {
-        fetch("/competitions")
+        fetch(baseURL + "/competitions")
             .then(res=> res.json())
             .then(data => {
                 setData(data);
