@@ -1,7 +1,6 @@
-import {baseURL} from "../services/Constants";
 export async function getAllProjects() {
     try{
-        const response = await fetch(baseURL + '/projects');
+        const response = await fetch('/projects');
         // returns json object
         return await response.json();
     }catch(e) {

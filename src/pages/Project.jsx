@@ -3,7 +3,7 @@ import {useParams} from "react-router-dom";
 import rectImg from "../assets/Rectangle 3.png";
 import Option from "../components/Option";
 import {InfinitySpin} from "react-loader-spinner";
-import {baseURL} from "../services/Constants";
+
 
 function Project() {
     const {Name} = useParams();
@@ -21,7 +21,7 @@ function Project() {
 
     // React will not wait till the data has been loaded
     React.useEffect(() => {
-        fetch(baseURL + "/project/" + Name)
+        fetch("/project/" + Name)
             .then(res=> res.json())
             .then(data => {
                 setData(data);

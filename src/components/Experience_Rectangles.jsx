@@ -1,7 +1,7 @@
 import React from "react";
 import rect from "../assets/Rectangle 5.png";
 import {InfinitySpin} from "react-loader-spinner";
-import {baseURL} from "../services/Constants";
+
 function Experience_Rectangles(){
 
     const [data, setData] = React.useState([]);
@@ -10,7 +10,7 @@ function Experience_Rectangles(){
 
     // React will not wait till the data has been loaded
     React.useEffect(() => {
-        fetch(baseURL + "/experiences")
+        fetch("/experiences")
             .then(res=> res.json())
             .then(data => {
                 setData(data);

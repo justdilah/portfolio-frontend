@@ -2,7 +2,6 @@ import React from "react";
 import {useParams} from "react-router-dom";
 import rect from "../assets/Rectangle 3.png";
 import {InfinitySpin} from "react-loader-spinner";
-import {baseURL} from "../services/Constants";
 
 function Competition(){
 
@@ -12,7 +11,7 @@ function Competition(){
     const [error,setError] = React.useState();
 
     React.useEffect(() => {
-        fetch(baseURL + "/competition/" + Name)
+        fetch("/competition/" + Name)
             .then(res=> res.json())
             .then(data => {
                 setData(data);
