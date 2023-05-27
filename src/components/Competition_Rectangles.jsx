@@ -6,6 +6,7 @@ import {baseURL} from "../services/Constants";
 import {Link, useNavigate} from "react-router-dom";
 
 function Competition_Rectangles(){
+    //Use in the OnClick function
     const navigate = useNavigate();
 
     console.log(baseURL)
