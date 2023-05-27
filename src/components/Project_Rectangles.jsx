@@ -1,6 +1,7 @@
 import React  from 'react';
 import project_rect from "../assets/project_rect.png";
 import Option from "./Option";
+import {baseURL} from "../services/Constants";
 
 
 function Projects_Rectangles(props) {
@@ -26,7 +27,7 @@ function Projects_Rectangles(props) {
                             </>
                         ))}
                     </div>
-                    <a href={"/project/" + props.name}><button className="viewmore">View More</button></a>
+                    <a href={baseURL + "/project/" + props.name}><button className="viewmore">View More</button></a>
                 </div>
             </div>
     );

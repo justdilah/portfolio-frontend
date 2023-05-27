@@ -43,7 +43,7 @@ function Experience_Rectangles(){
                             <p className="company"><strong>{item.CompanyName}</strong></p>
                             <p><strong>{item.JobPosition}</strong></p>
                             <p>{item.Period}</p>
-                            <a href={"/experience/"+ item.CompanyName}><button className="viewmore">View More</button></a>
+                            <a href={baseURL + "/experience/"+ item.CompanyName}><button className="viewmore">View More</button></a>
                         </div>
                     </div>
                 ))
