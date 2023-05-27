@@ -7,6 +7,7 @@ import {baseURL} from "../services/Constants";
 
 function Competition_Rectangles(){
 
+    console.log(baseURL)
     const [data, setData] = React.useState([]);
     const [loading,setLoading] = React.useState(true);
     const [error,setError] = React.useState();
