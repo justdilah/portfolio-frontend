@@ -50,7 +50,7 @@ function Competition_Rectangles(){
                                 <Option key={item.Type} option={item.Type}/>
                             </div>
                         <br/>
-                        <a href={baseURL + "/competition/" + item.Name}><button className="viewmore">View More</button></a>
+                        <a href={"/competition/" + item.Name}><button className="viewmore">View More</button></a>
 
                     </div>
                 </div>
