@@ -35,6 +35,8 @@ function App() {
                 <Route Route exact path='/skills' element={<Skills />} />
                 <Route Route path='/competition/:Name' element={<Competition />} />
                 <Route Route path='/experience/:Name' element={<Experience />} />
+                {/*Unavailable path*/}
+                <Route path="*" element={<Home />} />
 
             </Routes>
             <footer>
