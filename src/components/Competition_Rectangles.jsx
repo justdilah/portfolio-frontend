@@ -3,7 +3,7 @@ import React from "react";
 import rect from "../assets/Rectangle 5.png";
 import {InfinitySpin} from "react-loader-spinner";
 import {baseURL} from "../services/Constants";
-
+import {Link} from "react-router-dom";
 
 function Competition_Rectangles(){
 
@@ -50,7 +50,7 @@ function Competition_Rectangles(){
                                 <Option key={item.Type} option={item.Type}/>
                             </div>
                         <br/>
-                        <a href={"/competition/" + item.Name}><button className="viewmore">View More</button></a>
+                        <Link to={"/competition/" + item.Name}><button className="viewmore">View More</button></Link>
 
                     </div>
                 </div>
