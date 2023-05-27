@@ -1,10 +1,11 @@
 import React  from 'react';
 import project_rect from "../assets/project_rect.png";
 import Option from "./Option";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 
 function Projects_Rectangles(props) {
+    const navigate = useNavigate();
 
     if (props.name === "undefined") {
         return <h1>Loading</h1>
@@ -27,7 +28,9 @@ function Projects_Rectangles(props) {
                             </>
                         ))}
                     </div>
-                    <Link to={"/project/" + props.name}><button className="viewmore">View More</button></Link>
+                    <button className="viewmore" onClick={() => {
+                        navigate("/project/" + props.name);
+                    }}>View More</button>
                 </div>
             </div>
     );

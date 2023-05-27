@@ -2,7 +2,9 @@ import React from "react";
 import rect from "../assets/Rectangle 5.png";
 import {InfinitySpin} from "react-loader-spinner";
 import {baseURL} from "../services/Constants";
+import {useNavigate} from "react-router-dom";
 function Experience_Rectangles(){
+    const navigate = useNavigate();
 
     const [data, setData] = React.useState([]);
     const [loading,setLoading] = React.useState(true);
@@ -43,7 +45,9 @@ function Experience_Rectangles(){
                             <p className="company"><strong>{item.CompanyName}</strong></p>
                             <p><strong>{item.JobPosition}</strong></p>
                             <p>{item.Period}</p>
-                            <a href={"/experience/"+ item.CompanyName}><button className="viewmore">View More</button></a>
+                            <button className="viewmore" onClick={() => {
+                                navigate("/experience/"+ item.CompanyName);
+                            }}>View More</button>
                         </div>
                     </div>
                 ))

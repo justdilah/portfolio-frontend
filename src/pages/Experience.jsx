@@ -1,11 +1,12 @@
 import React from "react";
 import Option from "../components/Option";
-import {useParams} from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom";
 import rect from "../assets/Rectangle 3.png";
 import {InfinitySpin} from "react-loader-spinner";
 import {baseURL} from "../services/Constants";
 
 function Experience(){
+    const navigate = useNavigate();
     const {Name} = useParams();
     const [data, setData] = React.useState([]);
     const [loading,setLoading] = React.useState(true);
@@ -38,7 +39,9 @@ function Experience(){
 
     return (
         <body className="Body-Class">
-            <a href={"/aboutme"}><button className="viewmore">{"< Go Back"}</button></a>
+            <button className="viewmore" onClick={() => {
+                navigate("/aboutme");
+            }}>{"< Go Back"}</button>
             <div className="project-div">
                 <img className="div-rect" src={rect}/>
                 <div className="inner">

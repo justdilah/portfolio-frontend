@@ -1,13 +1,13 @@
 import React  from 'react';
-import {useParams} from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom";
 import rectImg from "../assets/Rectangle 3.png";
 import Option from "../components/Option";
 import {InfinitySpin} from "react-loader-spinner";
-import {baseURL} from "../services/Constants";
 
 
 function Project() {
     const {Name} = useParams();
+    const navigate = useNavigate();
 
     // Reference: https://www.youtube.com/watch?v=Vfdy4qAoPYs
     // There are 4 states when fetching data
@@ -54,7 +54,9 @@ function Project() {
     return (
 
         <body className="Body-Class">
-            <a href={"/projects"}><button className="viewmore">{"< Go Back"}</button></a>
+            <button className="viewmore" onClick={() => {
+                navigate("/aboutme");
+            }}>{"< Go Back"}</button>
             <div className="intro-block">
                 <img className="div-rect" src={rectImg} alt="logo" />
                 <div className="intro">

@@ -8,10 +8,6 @@ import {Link, useNavigate} from "react-router-dom";
 function Competition_Rectangles(){
     const navigate = useNavigate();
 
-    const navigateToContacts = () => {
-        // 👇️ navigate to /contacts
-        navigate('/contacts');
-    };
     console.log(baseURL)
     const [data, setData] = React.useState([]);
     const [loading,setLoading] = React.useState(true);
