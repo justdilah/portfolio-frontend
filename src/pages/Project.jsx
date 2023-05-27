@@ -56,7 +56,7 @@ function Project() {
 
         <body className="Body-Class">
             <button className="viewmore" onClick={() => {
-                navigate("/aboutme");
+                navigate("/projects");
             }}>{"< Go Back"}</button>
             <div className="intro-block">
                 <img className="div-rect" src={rectImg} alt="logo" />
