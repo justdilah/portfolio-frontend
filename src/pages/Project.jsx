@@ -22,7 +22,7 @@ function Project() {
 
     // React will not wait till the data has been loaded
     React.useEffect(() => {
-        fetch(baseURL + "/project/" + Name)
+        fetch("/project/" + Name)
             .then(res=> res.json())
             .then(data => {
                 setData(data);

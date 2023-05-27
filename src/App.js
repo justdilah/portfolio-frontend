@@ -31,10 +31,10 @@ function App() {
                 <Route Route exact path='/' element={<Home />} />
                 <Route Route exact path='/aboutme' element={<AboutMe />} />
                 <Route Route exact path='/projects' element={<Projects />} />
-                <Route path="/project/:Name" element={<Project />} />
+                <Route Route path="/project/:Name" element={<Project />} />
                 <Route Route exact path='/skills' element={<Skills />} />
-                <Route Route exact path='/competition/:Name' element={<Competition />} />
-                <Route Route exact path='/experience/:Name' element={<Experience />} />
+                <Route Route path='/competition/:Name' element={<Competition />} />
+                <Route Route path='/experience/:Name' element={<Experience />} />
 
             </Routes>
             <footer>

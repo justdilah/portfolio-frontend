@@ -3,10 +3,15 @@ import React from "react";
 import rect from "../assets/Rectangle 5.png";
 import {InfinitySpin} from "react-loader-spinner";
 import {baseURL} from "../services/Constants";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 function Competition_Rectangles(){
+    const navigate = useNavigate();
 
+    const navigateToContacts = () => {
+        // 👇️ navigate to /contacts
+        navigate('/contacts');
+    };
     console.log(baseURL)
     const [data, setData] = React.useState([]);
     const [loading,setLoading] = React.useState(true);
@@ -50,7 +55,11 @@ function Competition_Rectangles(){
                                 <Option key={item.Type} option={item.Type}/>
                             </div>
                         <br/>
-                        <Link to={"/competition/" + item.Name}><button className="viewmore">View More</button></Link>
+                        {/*<Link to={"/competition/" + item.Name}><button className="viewmore">View More</button></Link>*/}
+                        <button className="viewmore" onClick={() => {
+                            // 👇️ navigate to /
+                            navigate('/competition/' + item.Name);
+                        }}>View More</button>
 
                     </div>
                 </div>
