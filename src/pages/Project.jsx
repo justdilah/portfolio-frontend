@@ -21,7 +21,7 @@ function Project() {
     const [loading,setLoading] = React.useState(true);
     const [error,setError] = React.useState();
 
-    // React will not wait till the data has been loaded
+    // React do not not wait till the data has been loaded
     React.useEffect(() => {
         fetch(baseURL + "/project/" + Name)
             .then(res=> res.json())
