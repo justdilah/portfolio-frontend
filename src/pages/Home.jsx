@@ -14,7 +14,7 @@ function Home() {
                     <div className="intro_inner">
                         <h2><strong>Hello There, I'm <span>Dilah</span></strong></h2>
                         <p>I am a computer science undergraduate at NTU.<br/>My passion lies in <span className="wavy">software development</span> and <span className="wavy">artificial intelligence.</span> </p>
-                        <a href={"/document/dilah_resume.pdf"}><button className="viewmore">View Resume</button></a>
+                        <a href={"/document/Main Resume (SWE)_Dilah.pdf"}><button className="viewmore">View Resume</button></a>
                     </div>
                 </div>
             </div>
